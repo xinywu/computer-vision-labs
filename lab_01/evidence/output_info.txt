@@ -1,0 +1,70 @@
+实验一运行信息汇总
+==============================
+
+测试日期：2026-09-15
+操作系统：Microsoft Windows 11 家庭版 中文版 10.0.26200 64 位
+Python：3.12.14
+OpenCV：5.0.0
+NumPy：2.5.3
+Matplotlib：3.11.2
+虚拟环境：Conda opencv
+环境路径：C:\Users\w\.conda\envs\opencv
+
+T01 标准彩色 PNG
+------------------------------
+输入：data/input/color.png
+输入 shape：(480, 640, 3)
+输入 dtype：uint8
+输入通道数：3
+输出：data/output/t01_color_gray.png
+输出 shape：(480, 640)
+输出 dtype：uint8
+输出通道数：1
+像素范围：48 至 227
+运行耗时：0.040811 秒
+退出码：0
+状态：SUCCESS
+
+T03 输入路径不存在
+------------------------------
+输入：data/input/missing.png
+输出：data/output/t03_missing_gray.png
+实际行为：提示“输入文件不存在”
+退出码：1
+状态：ERROR
+结论：程序按预期拒绝无效路径，未生成输出文件。
+
+T07 损坏文件
+------------------------------
+输入：data/input/corrupted.png
+输出：data/output/t07_corrupted_gray.png
+实际行为：提示“读取失败，文件可能不是有效图像”
+退出码：1
+状态：ERROR
+结论：程序按预期拒绝损坏文件，未生成输出文件。
+
+T10 大尺寸图像
+------------------------------
+输入：data/input/large.png
+输入 shape：(1080, 1920, 3)
+输入 dtype：uint8
+输入通道数：3
+输出：data/output/t10_large_gray.png
+输出 shape：(1080, 1920)
+输出 dtype：uint8
+输出通道数：1
+像素范围：163 至 163
+运行耗时：0.024199 秒
+退出码：0
+状态：SUCCESS
+性能结论：运行耗时低于 2 秒，满足 NFR-01。
+
+总体结果
+------------------------------
+自动测试数量：10
+通过数量：10
+失败数量：0
+总体状态：PASS
+
+详细测试过程见 evidence/test_results.txt。
+成功、异常和性能截图见 evidence 目录。
