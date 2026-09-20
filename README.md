@@ -31,3 +31,35 @@ python lab_01\src\baseline_pipeline.py --input lab_01\data\input\color.png --out
 ```powershell
 python lab_01\src\run_tests.py
 ```
+
+## 实验二 图像基本运算与直方图均衡化
+
+实验二完成了灰度变换、图像代数运算、直方图统计和直方图均衡化。
+
+主要内容：
+
+- 实现线性灰度变换和两种伽马校正
+- 对比 NumPy 加法与 OpenCV 饱和加法
+- 实现图像加权混合和绝对差值
+- 比较暗图、正常图和低对比度图的直方图
+- 手写 CDF 直方图均衡化
+- 将手写结果与 `cv2.equalizeHist` 进行对比
+- 完成需求评审、MVP 范围确定和 OpenCV API 调研
+- 保存分类结果、实验报告和运行证据
+
+实验目录：[lab_02](./lab_02)
+
+运行实验二全部程序：
+
+```powershell
+conda activate opencv
+python lab_02\src\transform.py
+python lab_02\src\arith.py
+python lab_02\src\hist_equalize.py
+```
+
+实验文档：
+
+- [实验报告](./lab_02/docs/report.md)
+- [需求评审与 MVP 范围](./lab_02/docs/mvp_review.md)
+- [OpenCV API 调研](./lab_02/docs/api_notes.md)
