@@ -63,3 +63,34 @@ python lab_02\src\hist_equalize.py
 - [实验报告](./lab_02/docs/report.md)
 - [需求评审与 MVP 范围](./lab_02/docs/mvp_review.md)
 - [OpenCV API 调研](./lab_02/docs/api_notes.md)
+
+## 实验三 空间滤波与图像增强
+
+实验三完成了高斯噪声与椒盐噪声生成、空间滤波、图像锐化以及 PSNR/SSIM 质量评价。
+
+主要内容：
+
+- 生成高斯噪声和椒盐噪声图像
+- 对比均值滤波、高斯滤波和中值滤波
+- 验证高斯滤波更适合处理高斯噪声
+- 验证中值滤波更适合处理椒盐噪声
+- 实现拉普拉斯锐化和 USM 锐化
+- 使用 PSNR 和 SSIM 定量评价处理结果
+- 绘制 SFM 系统数据流图并标注预处理模块边界
+- 定义统一的 `uint8 BGR` 预处理接口
+- 保存实验结果、评分表、报告和运行证据
+
+实验目录：[lab_03](./lab_03)
+
+运行实验三：
+
+```powershell
+conda activate opencv
+python lab_03\src\spatial_filtering.py
+```
+
+实验文档：
+
+- [实验报告](./lab_03/docs/report.md)
+- [SFM 系统架构](./lab_03/docs/architecture.md)
+- [预处理接口约定](./lab_03/docs/interface_agreement.md)

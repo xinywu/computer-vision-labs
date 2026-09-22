@@ -1,0 +1,36 @@
+图片读取成功
+图片路径： C:\develop\Python\Labs\lab_03\data\photo01.jpg
+图片尺寸： (1434, 1080)
+数据类型： uint8
+高斯噪声图已保存： C:\develop\Python\Labs\lab_03\results\gaussian_noise.jpg
+椒盐噪声图已保存： C:\develop\Python\Labs\lab_03\results\salt_pepper.jpg
+滤波结果已保存： C:\develop\Python\Labs\lab_03\results\blur.jpg
+滤波结果已保存： C:\develop\Python\Labs\lab_03\results\gauss.jpg
+滤波结果已保存： C:\develop\Python\Labs\lab_03\results\median.jpg
+椒盐噪声滤波结果已保存： C:\develop\Python\Labs\lab_03\results\sp_blur.jpg
+椒盐噪声滤波结果已保存： C:\develop\Python\Labs\lab_03\results\sp_gauss.jpg
+椒盐噪声滤波结果已保存： C:\develop\Python\Labs\lab_03\results\sp_median.jpg
+锐化结果已保存： C:\develop\Python\Labs\lab_03\results\sharp_laplacian.jpg
+锐化结果已保存： C:\develop\Python\Labs\lab_03\results\sharp_usm.jpg
+
+质量评价结果
+--------------------------------------------------
+噪声类型        处理方法             PSNR/dB        SSIM
+--------------------------------------------------
+高斯噪声        含噪图                20.47      0.5373
+高斯噪声        均值滤波               22.63      0.6607
+高斯噪声        高斯滤波               23.63      0.7287
+高斯噪声        中值滤波               23.08      0.6689
+椒盐噪声        含噪图                15.02      0.3529
+椒盐噪声        均值滤波               21.44      0.5678
+椒盐噪声        高斯滤波               22.18      0.6354
+椒盐噪声        中值滤波               23.90      0.7976
+--------------------------------------------------
+评分表已保存： C:\develop\Python\Labs\lab_03\results\metrics.csv
+滤波对比图已保存： C:\develop\Python\Labs\lab_03\results\gaussian_comparison.jpg
+滤波对比图已保存： C:\develop\Python\Labs\lab_03\results\salt_pepper_comparison.jpg
+锐化对比图已保存： C:\develop\Python\Labs\lab_03\results\sharpen_comparison.jpg
+预处理接口调用成功
+接口输入格式： (1434, 1080, 3) uint8
+接口输出格式： (1434, 1080, 3) uint8
+接口结果已保存： C:\develop\Python\Labs\lab_03\results\preprocessed_bgr.jpg
