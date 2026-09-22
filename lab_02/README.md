@@ -23,7 +23,7 @@
 - Matplotlib 3.11.2
 - Conda 环境：`opencv`
 
-项目依赖记录在仓库根目录的 `requirements.txt` 中。
+项目依赖沿用实验一的 [requirements.txt](../lab_01/requirements.txt)。
 
 ## 3. 目录结构
 
