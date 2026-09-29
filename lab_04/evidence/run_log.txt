@@ -1,0 +1,31 @@
+两张图片读取成功
+photo01 尺寸： (1434, 1080)
+photo02 尺寸： (1332, 1080)
+
+开始 Sobel 梯度实验
+已保存：sobel_k3.jpg
+已保存：sobel_k5.jpg
+已保存：sobel_comparison.jpg
+
+开始 Canny 边缘检测实验
+已保存：canny_50_150.jpg
+Canny (50, 150) 边缘密度：19.06%
+已保存：canny_100_200.jpg
+Canny (100, 200) 边缘密度：17.65%
+已保存：canny_150_250.jpg
+Canny (150, 250) 边缘密度：16.06%
+已保存：canny_comparison.jpg
+
+开始固定阈值与 Otsu 分割实验
+已保存：threshold_fixed_128.jpg
+已保存：threshold_otsu.jpg
+已保存：threshold_comparison.jpg
+photo01 的 Otsu 自动阈值：142.00
+
+开始自适应阈值实验
+已保存：uneven_otsu.jpg
+已保存：uneven_adaptive.jpg
+已保存：adaptive_comparison.jpg
+photo02 的 Otsu 自动阈值：89.00
+
+实验四的图像处理结果已全部生成
