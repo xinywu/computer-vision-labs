@@ -1,0 +1,14 @@
+实验五单元测试实测结果
+环境：Windows，Python 3.12.14，pytest 9.1.1，OpenCV 5.0.0
+命令：C:\Users\w\.conda\envs\opencv\python.exe -m pytest lab_05\tests -v
+
+test_valid_uint8_input_does_not_raise PASSED
+test_non_array_input_rejected PASSED
+test_empty_image_rejected PASSED
+test_plain_image_returns_empty PASSED
+test_chessboard_has_corners PASSED
+test_coordinates_are_integer_and_in_range PASSED
+test_color_image_is_supported PASSED
+test_pyramid_has_four_halving_levels PASSED
+
+结果：8 passed in 0.12s
