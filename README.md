@@ -94,3 +94,85 @@ python lab_03\src\spatial_filtering.py
 - [实验报告](./lab_03/docs/report.md)
 - [SFM 系统架构](./lab_03/docs/architecture.md)
 - [预处理接口约定](./lab_03/docs/interface_agreement.md)
+
+
+## 实验四 边缘检测与图像分割
+
+实验四完成了 Sobel 梯度、Canny 边缘检测、固定阈值、Otsu 自动阈值和自适应阈值实验。
+
+主要内容：
+
+- 比较大小为 3 和 5 的 Sobel 卷积核
+- 比较三组 Canny 双阈值
+- 比较固定阈值与 Otsu 自动阈值
+- 验证自适应阈值对光照不均图像的处理效果
+- 编写详细设计和编码规范文档
+
+实验目录：[lab_04](./lab_04)
+
+运行实验四：
+
+```powershell
+python lab_04\src\edge_segmentation.py
+```
+
+实验文档：
+
+- [实验说明](./lab_04/README.md)
+- [详细设计](./lab_04/docs/detailed_design.md)
+- [编码规范](./lab_04/docs/coding_standards.md)
+
+## 实验五 角点检测与尺度空间
+
+实验五完成了 Harris 角点检测、Shi-Tomasi 角点检测、图像金字塔和 DoG 尺度空间实验。
+
+主要内容：
+
+- 比较不同参数下的 Harris 角点检测结果
+- 提取 Shi-Tomasi 角点并与 Harris 结果对比
+- 构建四层图像金字塔
+- 计算相邻尺度的 DoG 图像
+- 编写并运行自动化测试
+
+实验目录：[lab_05](./lab_05)
+
+运行实验五：
+
+```powershell
+python lab_05\src\run_experiment.py
+python -m pytest lab_05\tests -v
+```
+
+实验文档：
+
+- [实验说明](./lab_05/README.md)
+- [实验报告](./lab_05/docs/report.md)
+
+## 实验六 SIFT 特征提取与描述
+
+实验六完成了 SIFT 关键点检测、128 维描述子提取、参数实验，以及旋转和尺度不变性验证。
+
+主要内容：
+
+- 提取并可视化 SIFT 关键点
+- 比较 `nfeatures`、`contrastThreshold` 和 `edgeThreshold`
+- 验证 SIFT 对 30° 旋转和 0.6 倍缩放的鲁棒性
+- 使用 BFMatcher 和 Lowe ratio test 完成特征匹配
+- 将提取功能封装为 `extract_sift(img, cfg)`
+- 完成 3 项自动化测试
+
+实验目录：[lab_06](./lab_06)
+
+运行实验六：
+
+```powershell
+python lab_06\src\sift_experiment.py
+python lab_06\src\parameter_experiment.py
+python lab_06\src\invariance_experiment.py
+python -m unittest discover -s lab_06\tests -v
+```
+
+实验文档：
+
+- [实验说明](./lab_06/README.md)
+- [实验报告](./lab_06/docs/report.md)
