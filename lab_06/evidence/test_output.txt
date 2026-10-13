@@ -1,0 +1,8 @@
+test_descriptor_has_128_dimensions (test_features.TestExtractSift.test_descriptor_has_128_dimensions) ... ok
+test_extracts_keypoints (test_features.TestExtractSift.test_extracts_keypoints) ... ok
+test_rejects_empty_image (test_features.TestExtractSift.test_rejects_empty_image) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.040s
+
+OK
