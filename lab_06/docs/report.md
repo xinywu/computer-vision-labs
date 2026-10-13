@@ -90,6 +90,12 @@ SIFT 提取功能封装在 `src/features.py` 中，接口为：
 
 3 项自动测试全部通过。
 
-## 八 实验结论
+## 八 Git 分支与提交记录
+
+本实验从 `main` 创建 `feature/l6-sift` 分支进行开发，并按照 Conventional Commits 规范分别完成 `feat`、`test` 和 `docs` 提交。开发完成后通过 Pull Request #1 合并到 `main`。
+
+![Git提交历史](../evidence/git_history.png)
+
+## 九 实验结论
 
 本实验完成了 SIFT 关键点提取、128 维描述子计算、参数对比以及旋转和尺度不变性验证。实验结果表明，参数设置会明显影响关键点数量和分布；图像经过 30° 旋转和 0.6 倍缩放后仍保留了大量可靠匹配，说明 SIFT 对旋转和尺度变化具有较好的鲁棒性。
